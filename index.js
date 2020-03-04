@@ -36,19 +36,19 @@ fs.readdir(directoryPathCardBack, (err, files) => {
 		});
 
 		console.log(fil);
-		// version.version = version.version + 1;
+		version.version = version.version + 1;
 
-		// fs.writeFile('version.json', JSON.stringify(version), function(err) {
-		// 	if (err) {
-		// 		console.log(err);
-		// 	}
-		// 	merge(fil, `finalcards_${version}.pdf`, function(err) {
-		// 		if (err) {
-		// 			return console.log(err);
-		// 		}
-		// 		console.log('Successfully merged!');
-		// 	});
-		// });
+		fs.writeFile('version.json', JSON.stringify(version), function(err) {
+			if (err) {
+				console.log(err);
+			}
+			merge(fil, `finalcards_${version}.pdf`, function(err) {
+				if (err) {
+					return console.log(err);
+				}
+				console.log('Successfully merged!');
+			});
+		});
 	});
 });
 
