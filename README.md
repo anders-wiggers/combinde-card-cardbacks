@@ -7,3 +7,8 @@ How to run :)
 * run `npm install`
 * run `npm start`
 
+If mergin JPGS to an image use 
+```
+node jpg.js
+```
+Note, only works if all the files are Images/PDF (ONE TYPE ONLY)
