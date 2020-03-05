@@ -47,6 +47,7 @@ fs.readdir(directoryPathCardBack, (err, files) => {
 					return console.log(err);
 				}
 				console.log('Successfully merged!');
+				console.log(`Outputted to output/finalcards_${version}.pdf`);
 			});
 		});
 	});

@@ -43,6 +43,8 @@ fs.readdir(directoryPathCardBack, (err, files) => {
 				console.log(err);
 			}
 			imagesToPdf(fil, `output/finalcards_${version.version}.pdf`);
+			console.log('Successfully merged!');
+			console.log(`Outputted to output/finalcards_${version}.pdf`);
 		});
 	});
 });
