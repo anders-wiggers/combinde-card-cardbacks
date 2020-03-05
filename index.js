@@ -42,7 +42,7 @@ fs.readdir(directoryPathCardBack, (err, files) => {
 			if (err) {
 				console.log(err);
 			}
-			merge(fil, `finalcards_${version}.pdf`, function(err) {
+			merge(fil, `output/finalcards_${version}.pdf`, function(err) {
 				if (err) {
 					return console.log(err);
 				}
